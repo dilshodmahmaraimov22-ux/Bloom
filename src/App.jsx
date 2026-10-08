@@ -5,18 +5,20 @@ import Collection from './Page/CollectionsPage/Collection'
 import About from './Page/AboutPage/About'
 import Custom from './Page/CustomPage/Custom'
 import Contact from './Page/ContactPage/Contact'
-import { BrowserRouter, Routes, Route, Router } from 'react-router-dom'
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
 
 const App = () => {
   return (
     <>
      <BrowserRouter>
                    <Routes>
-                          <Router>
-                                 <Router/>
-                                 <Router/>
-                                 <Router/>
-                          </Router>
+                          <Route>
+                                 <Route path='/' element={<Home/>}/>
+                                 <Route path='/collection' element={<Collection/>}/>
+                                 <Route path='/about' element={<About/>}/>
+                                 <Route path='/custom' element={<Custom/>}/>
+                                 <Route path='/contact' element={<Contact/>}/>
+                          </Route>
                    </Routes>
      </BrowserRouter>
     </>
