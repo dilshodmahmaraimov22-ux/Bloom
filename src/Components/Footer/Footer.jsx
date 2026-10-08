@@ -15,7 +15,6 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="footer__grid">
-          {/* 1. Brend */}
           <div className="footer__brand">
             <Link to="/" className="footer__logo">
               Knots <span className="footer__amp">&amp;</span> Bloom
@@ -23,7 +22,6 @@ const Footer = () => {
             <p className="footer__tagline">Handmade knots. Beautiful spaces.</p>
           </div>
 
-          {/* 2. Navigate */}
           <nav className="footer__col" aria-label="Footer menyusi">
             <h3 className="footer__title">Navigate</h3>
             <ul className="footer__list">
@@ -37,7 +35,6 @@ const Footer = () => {
             </ul>
           </nav>
 
-          {/* 3. Contact */}
           <div className="footer__col">
             <h3 className="footer__title">Demo Contact</h3>
             <ul className="footer__list">
@@ -83,7 +80,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Pastki qator */}
         <div className="footer__bottom">
           <p className="footer__copy">
             © {new Date().getFullYear()} Knots &amp; Bloom — Demo Website

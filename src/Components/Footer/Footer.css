@@ -14,7 +14,6 @@
   padding-top: clamp(48px, 7vw, 88px);
 }
 
-/* Agar Header.css da .container bor bo'lsa, buni o'chirib tashlang */
 .container {
   width: 100%;
   max-width: 1280px;
@@ -22,7 +21,6 @@
   padding: 0 clamp(16px, 4vw, 48px);
 }
 
-/* ---------- Grid ---------- */
 .footer__grid {
   display: grid;
   grid-template-columns: 1.7fr 1fr 1.2fr 1fr;
@@ -30,7 +28,6 @@
   padding-bottom: clamp(40px, 6vw, 72px);
 }
 
-/* ---------- Brend ---------- */
 .footer__logo {
   display: inline-block;
   font-family: 'Fraunces', Georgia, serif;
@@ -62,7 +59,6 @@
   color: var(--f-accent);
 }
 
-/* ---------- Ustunlar ---------- */
 .footer__title {
   margin: 0 0 24px;
   font-size: 16px;
@@ -94,7 +90,6 @@
   transition: color 0.25s var(--ease), transform 0.25s var(--ease);
 }
 
-/* hoverda o'ngga suriladi va chiziq o'sadi */
 .footer__link::after {
   content: '';
   position: absolute;
@@ -119,7 +114,6 @@
   transform: scaleX(1);
 }
 
-/* ---------- Ijtimoiy tarmoqlar ---------- */
 .footer__socials {
   display: flex;
   gap: 16px;
@@ -146,7 +140,6 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 }
 
-/* ---------- Pastki qator ---------- */
 .footer__bottom {
   display: flex;
   justify-content: space-between;
@@ -169,14 +162,12 @@
   font-style: italic;
 }
 
-/* ---------- Focus ---------- */
 .footer a:focus-visible {
   outline: 2px solid var(--f-accent);
   outline-offset: 4px;
   border-radius: 2px;
 }
 
-/* ---------- Planshet ---------- */
 @media (max-width: 960px) {
   .footer__grid {
     grid-template-columns: 1fr 1fr;
@@ -187,7 +178,6 @@
   }
 }
 
-/* ---------- Mobil ---------- */
 @media (max-width: 560px) {
   .footer__grid {
     grid-template-columns: 1fr;
@@ -214,7 +204,6 @@
   }
 }
 
-/* Animatsiyani kamaytirishni so'ragan foydalanuvchilar uchun */
 @media (prefers-reduced-motion: reduce) {
   .footer *,
   .footer *::after {
