@@ -8,7 +8,6 @@ const Hero = () => {
     <section className="hero">
       <div className="container">
         <div className="hero__container">
-          {/* Chap tomon */}
           <div className="hero__content">
             <p className="hero__eyebrow">
               <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -38,7 +37,6 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* O'ng tomon */}
           <div className="hero__media">
             <div className="hero__frame">
               <img
@@ -55,7 +53,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Pastdagi to'lqin */}
       <div className="hero__wave" aria-hidden="true">
         <svg viewBox="0 0 1000 24" preserveAspectRatio="none">
           <path

@@ -15,7 +15,6 @@
   overflow: hidden;
 }
 
-/* Agar .container boshqa CSS faylda bor bo'lsa, buni o'chirib tashlang */
 .container {
   width: 100%;
   max-width: 1280px;
@@ -23,7 +22,6 @@
   padding: 0 clamp(16px, 4vw, 48px);
 }
 
-/* ---------- Layout ---------- */
 .hero__container {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
@@ -33,7 +31,6 @@
   padding-bottom: 56px;
 }
 
-/* ---------- Chap tomon ---------- */
 .hero__eyebrow {
   display: flex;
   align-items: center;
@@ -78,7 +75,6 @@
   color: var(--h-text);
 }
 
-/* ---------- Tugmalar ---------- */
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
@@ -131,7 +127,6 @@
   transform: translateY(-1px);
 }
 
-/* ---------- Rasm ---------- */
 .hero__media {
   position: relative;
 }
@@ -155,7 +150,6 @@
   transform: scale(1.05);
 }
 
-/* Rasm ustidagi karta */
 .hero__badge {
   position: absolute;
   left: -44px;
@@ -188,7 +182,6 @@
   flex-shrink: 0;
 }
 
-/* ---------- To'lqin ---------- */
 .hero__wave {
   position: relative;
   height: 24px;
@@ -222,13 +215,11 @@
   50% { transform: translate(-50%, -50%) scale(1.35); }
 }
 
-/* ---------- Focus ---------- */
 .hero a:focus-visible {
   outline: 2px solid var(--h-accent);
   outline-offset: 4px;
 }
 
-/* ---------- Planshet ---------- */
 @media (max-width: 960px) {
   .hero__container {
     grid-template-columns: 1fr;
@@ -254,7 +245,6 @@
   }
 }
 
-/* ---------- Mobil ---------- */
 @media (max-width: 560px) {
   .hero__actions {
     flex-direction: column;
@@ -280,7 +270,6 @@
   }
 }
 
-/* Animatsiyani kamaytirishni so'ragan foydalanuvchilar uchun */
 @media (prefers-reduced-motion: reduce) {
   .hero *,
   .hero *::after {
