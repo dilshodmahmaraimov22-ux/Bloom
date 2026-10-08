@@ -14,12 +14,10 @@ const Header = () => {
   const [open, setOpen] = useState(false)
   const { pathname } = useLocation()
 
-  // sahifa almashganda menyuni yopish
   useEffect(() => {
     setOpen(false)
   }, [pathname])
 
-  // Escape bosilganda yopish
   useEffect(() => {
     const onKey = (e) => e.key === 'Escape' && setOpen(false)
     window.addEventListener('keydown', onKey)
