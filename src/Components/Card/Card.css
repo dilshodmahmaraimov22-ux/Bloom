@@ -15,7 +15,6 @@
   padding: clamp(40px, 6vw, 72px) 0 clamp(56px, 8vw, 96px);
 }
 
-/* Agar .container boshqa CSS faylda bor bo'lsa, buni o'chirib tashlang */
 .container {
   width: 100%;
   max-width: 1280px;
@@ -23,7 +22,6 @@
   padding: 0 clamp(16px, 4vw, 48px);
 }
 
-/* ---------- Sarlavha ---------- */
 .featured__head {
   text-align: center;
   margin-bottom: clamp(32px, 5vw, 56px);
@@ -53,14 +51,12 @@
   color: var(--c-body);
 }
 
-/* ---------- Grid ---------- */
 .featured__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: clamp(16px, 2.2vw, 28px);
 }
 
-/* ---------- Karta ---------- */
 .card {
   display: flex;
   flex-direction: column;
@@ -133,13 +129,12 @@
   color: var(--c-body);
 }
 
-/* ---------- Pastki qator ---------- */
 .card__footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   gap: 12px;
-  margin-top: auto; /* narx doim kartaning pastida turadi */
+  margin-top: auto;
 }
 
 .card__price-box {
@@ -194,7 +189,6 @@
   transform: translateX(4px);
 }
 
-/* chiziq bir marta o'chib, chapdan qaytib o'sadi */
 .card__link:hover::after {
   animation: card-line 0.5s var(--ease);
 }
@@ -206,20 +200,17 @@
   100% { transform: scaleX(1); transform-origin: left; }
 }
 
-/* ---------- Focus ---------- */
 .featured a:focus-visible {
   outline: 2px solid var(--c-accent);
   outline-offset: 4px;
 }
 
-/* ---------- Planshet ---------- */
 @media (max-width: 900px) {
   .featured__grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* ---------- Mobil ---------- */
 @media (max-width: 580px) {
   .featured__grid {
     grid-template-columns: 1fr;
@@ -230,7 +221,6 @@
   }
 }
 
-/* Animatsiyani kamaytirishni so'ragan foydalanuvchilar uchun */
 @media (prefers-reduced-motion: reduce) {
   .featured *,
   .featured *::after {
