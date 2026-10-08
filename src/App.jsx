@@ -10,15 +10,15 @@ import { BrowserRouter, Routes, Route, Router } from 'react-router-dom'
 const App = () => {
   return (
     <>
-    <BrowserRouter>
-                  <Routes>
-                         <Router>
-                                <Router/>
-                                <Router/>
-                                <Router/>
-                         </Router>
-                  </Routes>
-    </BrowserRouter>
+     <BrowserRouter>
+                   <Routes>
+                          <Router>
+                                 <Router/>
+                                 <Router/>
+                                 <Router/>
+                          </Router>
+                   </Routes>
+     </BrowserRouter>
     </>
   )
 }
