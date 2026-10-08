@@ -13,7 +13,6 @@
   padding: clamp(64px, 9vw, 120px) 0;
 }
 
-/* Agar .container boshqa CSS faylda bor bo'lsa, buni o'chirib tashlang */
 .container {
   width: 100%;
   max-width: 1280px;
@@ -27,7 +26,6 @@
   text-align: center;
 }
 
-/* ---------- Qo'lyozma yozuv ---------- */
 .text__eyebrow {
   display: inline-block;
   margin: 0 0 4px;
@@ -43,7 +41,6 @@
   transform: rotate(-4deg) translateY(-3px);
 }
 
-/* ---------- Sarlavha ---------- */
 .text__title {
   position: relative;
   display: block;
@@ -59,7 +56,6 @@
   transition: transform 0.4s var(--ease);
 }
 
-/* hoverda ostidan chiziq o'rtadan o'sib chiqadi */
 .text__title::after {
   content: '';
   position: absolute;
@@ -81,7 +77,6 @@
   transform: scaleX(1);
 }
 
-/* ---------- Matn ---------- */
 .text__desc {
   margin: 0;
   font-size: clamp(16px, 1.4vw, 19px);
@@ -90,7 +85,6 @@
   color: var(--t-body);
 }
 
-/* ---------- Mobil ---------- */
 @media (max-width: 560px) {
   .text__title {
     margin-bottom: 20px;
@@ -101,7 +95,6 @@
   }
 }
 
-/* Animatsiyani kamaytirishni so'ragan foydalanuvchilar uchun */
 @media (prefers-reduced-motion: reduce) {
   .text *,
   .text *::after {
