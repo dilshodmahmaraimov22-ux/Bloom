@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Fraunces:opsz,wght@9..144,600&family=Work+Sans:wght@400&display=swap');
+
+.text {
+  --t-bg: #f9f6f1;
+  --t-ink: #5a4535;
+  --t-body: #6d625a;
+  --t-accent: #a85d3f;
+  --t-line: #b87d5a;
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+
+  background: var(--t-bg);
+  font-family: 'Work Sans', system-ui, sans-serif;
+  padding: clamp(64px, 9vw, 120px) 0;
+}
+
+/* Agar .container boshqa CSS faylda bor bo'lsa, buni o'chirib tashlang */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 4vw, 48px);
+}
+
+.text__container {
+  max-width: 660px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ---------- Qo'lyozma yozuv ---------- */
+.text__eyebrow {
+  display: inline-block;
+  margin: 0 0 4px;
+  font-family: 'Caveat', cursive;
+  font-size: clamp(24px, 2.4vw, 32px);
+  line-height: 1.1;
+  color: var(--t-accent);
+  transform-origin: center bottom;
+  transition: transform 0.4s var(--ease);
+}
+
+.text__container:hover .text__eyebrow {
+  transform: rotate(-4deg) translateY(-3px);
+}
+
+/* ---------- Sarlavha ---------- */
+.text__title {
+  position: relative;
+  display: block;
+  width: fit-content;
+  margin: 0 auto 28px;
+  padding-bottom: 14px;
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 600;
+  font-size: clamp(34px, 4.6vw, 56px);
+  line-height: 1.1;
+  letter-spacing: -0.005em;
+  color: var(--t-ink);
+  transition: transform 0.4s var(--ease);
+}
+
+/* hoverda ostidan chiziq o'rtadan o'sib chiqadi */
+.text__title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--t-line);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.5s var(--ease);
+}
+
+.text__container:hover .text__title {
+  transform: translateY(-2px);
+}
+
+.text__container:hover .text__title::after {
+  transform: scaleX(1);
+}
+
+/* ---------- Matn ---------- */
+.text__desc {
+  margin: 0;
+  font-size: clamp(16px, 1.4vw, 19px);
+  line-height: 1.85;
+  letter-spacing: 0.02em;
+  color: var(--t-body);
+}
+
+/* ---------- Mobil ---------- */
+@media (max-width: 560px) {
+  .text__title {
+    margin-bottom: 20px;
+  }
+
+  .text__desc {
+    line-height: 1.75;
+  }
+}
+
+/* Animatsiyani kamaytirishni so'ragan foydalanuvchilar uchun */
+@media (prefers-reduced-motion: reduce) {
+  .text *,
+  .text *::after {
+    transition-duration: 0.01ms !important;
+  }
+
+  .text__container:hover .text__eyebrow,
+  .text__container:hover .text__title {
+    transform: none;
+  }
+}
