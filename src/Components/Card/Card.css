@@ -22,7 +22,6 @@
   box-sizing: border-box;
 }
 
-/* ---------- Intro ---------- */
 .card__intro {
   max-width: 470px;
   margin: 0 auto;
@@ -59,7 +58,6 @@
   color: var(--card-text);
 }
 
-/* ---------- Header ---------- */
 .card__header {
   max-width: 600px;
   margin: 110px auto 36px;
@@ -80,7 +78,6 @@
   color: var(--card-text);
 }
 
-/* ---------- Grid ---------- */
 .card__grid {
   max-width: 784px;
   margin: 0 auto;
@@ -119,7 +116,6 @@
   transform: scale(1.04);
 }
 
-/* ---------- Body ---------- */
 .card__body {
   padding: 14px 14px 16px;
   display: flex;
@@ -196,7 +192,6 @@
   border-color: var(--card-accent);
 }
 
-/* ---------- Responsive ---------- */
 @media (max-width: 1024px) {
   .card {
     padding: 50px 40px 60px;
