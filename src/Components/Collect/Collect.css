@@ -23,7 +23,6 @@
   box-sizing: border-box;
 }
 
-/* ---------- Collections ---------- */
 .collect {
   background: var(--collect-bg);
   padding: 80px 30px 70px;
@@ -65,7 +64,6 @@
   color: var(--collect-text);
 }
 
-/* ---------- Grid ---------- */
 .collect__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -178,7 +176,6 @@
   border-color: var(--collect-accent);
 }
 
-/* ---------- CTA ---------- */
 .collect__cta-wrap {
   background: var(--collect-sand);
   padding: 50px 30px 60px;
@@ -256,7 +253,6 @@
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
 }
 
-/* ---------- Responsive ---------- */
 @media (max-width: 992px) {
   .collect {
     padding: 70px 24px 60px;
