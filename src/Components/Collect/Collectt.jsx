@@ -1,4 +1,4 @@
-import "./Collect.css";
+import "./Collectt.css";
 
 import card1 from "../Images/card1.png";
 import card2 from "../Images/card2.png";
@@ -20,43 +20,43 @@ const products = [
   { id: 12, image: card3, category: "Gift Ideas", title: "Minimalist Gift Wreath", text: "A small colourful wreath, perfect as a housewarming or thank-you gift.", price: 30 },
 ];
 
-function Collect() {
+function Collectt() {
   return (
     <>
-      <section className="collect">
-        <div className="collect__container">
-          <div className="collect__header">
-            <span className="collect__script">Handmade, one knot at a time</span>
-            <h2 className="collect__title">Our Collections</h2>
-            <p className="collect__subtitle">
+      <section className="collectt">
+        <div className="collectt__container">
+          <div className="collectt__header">
+            <span className="collectt__script">Handmade, one knot at a time</span>
+            <h2 className="collectt__title">Our Collections</h2>
+            <p className="collectt__subtitle">
               Wall hangings, plant hangers and gift pieces, all hand-knotted in
               our studio.
             </p>
           </div>
 
-          <div className="collect__grid">
+          <div className="collectt__grid">
             {products.map((item) => (
-              <article className="collect__item" key={item.id}>
-                <div className="collect__media">
+              <article className="collectt__item" key={item.id}>
+                <div className="collectt__media">
                   <img
-                    className="collect__img"
+                    className="collectt__img"
                     src={item.image}
                     alt={item.title}
                     loading="lazy"
                   />
                 </div>
 
-                <div className="collect__body">
-                  <span className="collect__category">{item.category}</span>
-                  <h3 className="collect__name">{item.title}</h3>
-                  <p className="collect__text">{item.text}</p>
+                <div className="collectt__body">
+                  <span className="collectt__category">{item.category}</span>
+                  <h3 className="collectt__name">{item.title}</h3>
+                  <p className="collectt__text">{item.text}</p>
 
-                  <div className="collect__footer">
-                    <div className="collect__price-box">
-                      <span className="collect__price">${item.price}</span>
-                      <span className="collect__demo">Demo price</span>
+                  <div className="collectt__footer">
+                    <div className="collectt__price-box">
+                      <span className="collectt__price">${item.price}</span>
+                      <span className="collectt__demo">Demo price</span>
                     </div>
-                    <a href="#" className="collect__link">
+                    <a href="#" className="collectt__link">
                       View details
                     </a>
                   </div>
@@ -67,19 +67,19 @@ function Collect() {
         </div>
       </section>
 
-      <section className="collect__cta-wrap">
-        <div className="collect__cta">
-          <div className="collect__cta-content">
-            <h2 className="collect__cta-title">
+      <section className="collectt__cta-wrap">
+        <div className="collectt__cta">
+          <div className="collectt__cta-content">
+            <h2 className="collectt__cta-title">
               Don't See Quite What You're Picturing?
             </h2>
-            <p className="collect__cta-text">
+            <p className="collectt__cta-text">
               We can design a one-of-a-kind piece around your colors, space and
               size.
             </p>
           </div>
 
-          <a href="#" className="collect__cta-btn">
+          <a href="#" className="collectt__cta-btn">
             Request a custom piece
           </a>
         </div>
@@ -88,4 +88,4 @@ function Collect() {
   );
 }
 
-export default Collect;
+export default Collectt;
