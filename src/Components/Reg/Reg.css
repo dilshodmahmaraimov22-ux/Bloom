@@ -25,7 +25,6 @@
   padding: 40px 30px 80px;
 }
 
-/* ---------- Header ---------- */
 .reg__header {
   max-width: 620px;
   margin: 0 auto 80px;
@@ -58,7 +57,6 @@
   color: var(--reg-text);
 }
 
-/* ---------- Layout ---------- */
 .reg__layout {
   display: grid;
   grid-template-columns: 0.74fr 1fr;
@@ -66,7 +64,6 @@
   align-items: stretch;
 }
 
-/* ---------- Info card ---------- */
 .reg__info {
   padding: 66px 57px 60px;
   background: var(--reg-dark);
@@ -153,7 +150,7 @@
   border: 1px solid rgba(255, 255, 255, 0.28);
   border-radius: 50%;
   color: #efe6d8;
-  transition: background 0.25s ease, transform 0.25s ease, color 0.25s ease;
+  transition: 0.25s ease, transform 0.25s ease, color 0.25s ease;
 }
 
 .reg__social svg {
@@ -173,7 +170,6 @@
   transform: translateY(-3px);
 }
 
-/* ---------- Form ---------- */
 .reg__form {
   display: flex;
   flex-direction: column;
@@ -214,7 +210,7 @@
   letter-spacing: 0.02em;
   color: var(--reg-brown);
   outline: none;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, 0.2s ease;
 }
 
 .reg__input::placeholder {
@@ -251,7 +247,7 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   cursor: pointer;
-  transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  transition: 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .reg__btn:hover {
@@ -274,7 +270,6 @@
   color: var(--reg-text);
 }
 
-/* ---------- Responsive ---------- */
 @media (max-width: 1400px) {
   .reg__layout {
     gap: 50px;

@@ -1,8 +1,12 @@
 import React from 'react'
+import Reg from '../../Components/Reg/Reg'
+
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <>
+    <Reg/>
+    </>
   )
 }
 
