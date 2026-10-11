@@ -21,7 +21,6 @@
   box-sizing: border-box;
 }
 
-/* ---------- Top ---------- */
 .order__top {
   max-width: 1200px;
   margin: 0 auto;
@@ -59,7 +58,6 @@
   color: var(--order-text);
 }
 
-/* ---------- Steps ---------- */
 .order__steps {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -102,7 +100,6 @@
   color: var(--order-text);
 }
 
-/* ---------- Divider ---------- */
 .order__divider {
   position: relative;
   height: 20px;
@@ -128,7 +125,6 @@
   border-radius: 50%;
 }
 
-/* ---------- Bottom (form) ---------- */
 .order__bottom {
   background: var(--order-sand);
   padding: 70px 24px 90px;
@@ -197,7 +193,7 @@
   font-size: 11px;
   color: var(--order-brown);
   outline: none;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, 0.2s ease;
 }
 
 .order__input::placeholder {
@@ -227,7 +223,7 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   cursor: pointer;
-  transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  transition: 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .order__btn:hover {
@@ -250,7 +246,6 @@
   color: var(--order-text);
 }
 
-/* ---------- Responsive ---------- */
 @media (max-width: 992px) {
   .order__steps {
     grid-template-columns: repeat(2, 1fr);
@@ -288,7 +283,7 @@
     grid-template-columns: 1fr;
   }
   .order__input {
-    font-size: 14px; /* iOS da yaqinlashib ketmasligi uchun */
+    font-size: 14px;
   }
   .order__label {
     font-size: 11px;
