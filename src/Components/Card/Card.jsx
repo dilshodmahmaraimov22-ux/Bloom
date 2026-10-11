@@ -1,15 +1,15 @@
 import "./Card.css";
 
-import card1 from "../assets/boho-wall-hanging.jpg";
-import card2 from "../assets/ivory-dreamcatcher.jpg";
-import card3 from "../assets/woven-star-wreath.jpg";
-import card4 from "../assets/sage-plant-hanger.jpg";
+import card1 from "../Images/card1.png";
+import card2 from "../Images/card2.png";
+import card3 from "../Images/card3.png";
+import card4 from "../Images/card4.png";
 
 
 const products = [
   {
     id: 1,
-    image: img1,
+    image: card1,
     category: "Wall Decor",
     title: "Boho Wall Hanging",
     text: "Layered ivory cording with a soft tasseled fringe, hand-knotted on a natural wood dowel.",
@@ -17,7 +17,7 @@ const products = [
   },
   {
     id: 2,
-    image: img2,
+    image: card2,
     category: "Home Decor",
     title: "Ivory Dreamcatcher",
     text: "A full round mandala of hand-knotted natural rope, radiating fine detailed knotwork.",
@@ -25,7 +25,7 @@ const products = [
   },
   {
     id: 3,
-    image: img3,
+    image: card3,
     category: "Gift Ideas",
     title: "Woven Star Wreath",
     text: "A playful star-shaped weave in warm mustard, terracotta and sage — a joyful little gift.",
@@ -33,7 +33,7 @@ const products = [
   },
   {
     id: 4,
-    image: img4,
+    image: card4,
     category: "Plant Hangers",
     title: "Sage Plant Hanger",
     text: "A beaded cotton garland designed to cradle a small terracotta pot among your greenery.",
@@ -41,7 +41,7 @@ const products = [
   },
   {
     id: 5,
-    image: img5,
+    image: card1,
     category: "Wall Decor",
     title: "Textured Wall Art",
     text: "Chunky wrapped beads and long fringe create rhythm and texture across the whole panel.",
@@ -49,7 +49,7 @@ const products = [
   },
   {
     id: 6,
-    image: img6,
+    image: card3,
     category: "Gift Ideas",
     title: "Macramé Gift Piece",
     text: "A compact woven keepsake in mixed warm tones, ready to gift or display on its own.",
