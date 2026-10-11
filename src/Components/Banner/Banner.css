@@ -20,7 +20,6 @@
   box-sizing: border-box;
 }
 
-/* ---------- Why choose ---------- */
 .banner {
   background: var(--banner-sand);
   padding: 150px 40px 140px;
@@ -106,7 +105,6 @@
   color: var(--banner-text);
 }
 
-/* ---------- CTA ---------- */
 .banner__cta-wrap {
   background: var(--banner-bg);
   padding: 144px 50px 115px;
@@ -127,7 +125,6 @@
   gap: 40px;
 }
 
-/* dekorativ aylana */
 .banner__cta::after {
   content: "";
   position: absolute;
@@ -178,7 +175,7 @@
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 2px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, 0.25s ease;
 }
 
 .banner__cta-btn:hover {
@@ -187,7 +184,6 @@
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
 }
 
-/* ---------- Responsive ---------- */
 @media (max-width: 1200px) {
   .banner {
     padding: 110px 30px 100px;
