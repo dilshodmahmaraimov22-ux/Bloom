@@ -1,0 +1,374 @@
+.reg {
+  --reg-bg: #f9f6f1;
+  --reg-dark: #5a4837;
+  --reg-surface: #fefdfa;
+  --reg-border: #e6e0d5;
+  --reg-brown: #5a4636;
+  --reg-text: #6b6560;
+  --reg-accent: #a15c45;
+  --reg-btn: #b67c5a;
+
+  background: var(--reg-bg);
+  font-family: "Work Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+.reg *,
+.reg *::before,
+.reg *::after {
+  box-sizing: border-box;
+}
+
+.reg__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 30px 80px;
+}
+
+/* ---------- Header ---------- */
+.reg__header {
+  max-width: 620px;
+  margin: 0 auto 80px;
+  text-align: center;
+}
+
+.reg__script {
+  display: block;
+  font-family: "Caveat", cursive;
+  font-style: italic;
+  font-size: 22px;
+  color: var(--reg-accent);
+  margin-bottom: 4px;
+}
+
+.reg__title {
+  margin: 0 0 22px;
+  font-family: "Fraunces", serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.15;
+  color: var(--reg-brown);
+}
+
+.reg__lead {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+  color: var(--reg-text);
+}
+
+/* ---------- Layout ---------- */
+.reg__layout {
+  display: grid;
+  grid-template-columns: 0.74fr 1fr;
+  gap: 84px;
+  align-items: stretch;
+}
+
+/* ---------- Info card ---------- */
+.reg__info {
+  padding: 66px 57px 60px;
+  background: var(--reg-dark);
+  border-radius: 2px;
+  color: #efe6d8;
+}
+
+.reg__tag {
+  display: inline-block;
+  padding: 11px 19px;
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #efe6d8;
+}
+
+.reg__list {
+  margin: 38px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reg__item {
+  display: flex;
+  gap: 16px;
+  padding: 22px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.reg__item:first-child {
+  padding-top: 0;
+}
+
+.reg__icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-top: 2px;
+  color: #d9cbb8;
+}
+
+.reg__icon svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.reg__item-label {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.reg__item-text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.9;
+  letter-spacing: 0.02em;
+  color: #d9cfc1;
+  word-break: break-word;
+}
+
+.reg__socials {
+  display: flex;
+  gap: 21px;
+  margin-top: 40px;
+}
+
+.reg__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 50%;
+  color: #efe6d8;
+  transition: background 0.25s ease, transform 0.25s ease, color 0.25s ease;
+}
+
+.reg__social svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.reg__social:hover {
+  background: var(--reg-btn);
+  border-color: var(--reg-btn);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* ---------- Form ---------- */
+.reg__form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 80px 78px 66px;
+  background: var(--reg-surface);
+  border: 1px solid var(--reg-border);
+  box-shadow: 0 14px 34px rgba(90, 70, 54, 0.08);
+}
+
+.reg__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+}
+
+.reg__field {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.reg__label {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: var(--reg-brown);
+}
+
+.reg__input {
+  width: 100%;
+  padding: 20px 24px;
+  background: var(--reg-bg);
+  border: 1px solid var(--reg-border);
+  border-radius: 0;
+  font-family: inherit;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  color: var(--reg-brown);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.reg__input::placeholder {
+  color: #8f8a83;
+}
+
+.reg__input:focus {
+  background: #fff;
+  border-color: var(--reg-btn);
+  box-shadow: 0 0 0 3px rgba(182, 124, 90, 0.15);
+}
+
+.reg__textarea {
+  min-height: 165px;
+  resize: vertical;
+}
+
+.reg__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.reg__btn {
+  padding: 24px 48px;
+  background: var(--reg-btn);
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.reg__btn:hover {
+  background: #a26a49;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(161, 92, 69, 0.28);
+}
+
+.reg__success {
+  margin: 0;
+  font-size: 16px;
+  color: #5d7050;
+}
+
+.reg__note {
+  margin: 0;
+  font-size: 17px;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  color: var(--reg-text);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1400px) {
+  .reg__layout {
+    gap: 50px;
+  }
+  .reg__info {
+    padding: 50px 40px 46px;
+  }
+  .reg__form {
+    padding: 56px 50px 50px;
+  }
+  .reg__title {
+    font-size: 42px;
+  }
+  .reg__tag {
+    font-size: 12px;
+  }
+  .reg__item-label,
+  .reg__item-text,
+  .reg__label {
+    font-size: 16px;
+  }
+  .reg__input {
+    font-size: 16px;
+    padding: 16px 18px;
+  }
+  .reg__btn {
+    font-size: 16px;
+    padding: 18px 36px;
+  }
+  .reg__note {
+    font-size: 14px;
+  }
+  .reg__social {
+    width: 46px;
+    height: 46px;
+  }
+}
+
+@media (max-width: 992px) {
+  .reg__container {
+    padding: 30px 24px 70px;
+  }
+  .reg__header {
+    margin-bottom: 56px;
+  }
+  .reg__title {
+    font-size: 36px;
+  }
+  .reg__lead {
+    font-size: 15px;
+  }
+  .reg__layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .reg__container {
+    padding: 24px 16px 56px;
+  }
+  .reg__title {
+    font-size: 30px;
+  }
+  .reg__script {
+    font-size: 20px;
+  }
+  .reg__info {
+    padding: 36px 24px 34px;
+  }
+  .reg__form {
+    padding: 32px 20px 30px;
+    gap: 26px;
+  }
+  .reg__row {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+  .reg__field {
+    gap: 12px;
+  }
+  .reg__item-label,
+  .reg__item-text,
+  .reg__label {
+    font-size: 15px;
+  }
+  .reg__input {
+    font-size: 15px;
+  }
+  .reg__btn {
+    width: 100%;
+    text-align: center;
+  }
+  .reg__note {
+    font-size: 13px;
+  }
+}
